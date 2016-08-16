@@ -1,8 +1,8 @@
 Pod::Spec.new do |s|
   s.name         = 'ServerChan'
   s.summary      = 'A debug log based on 「ServerChan」'
-  s.version      = '1.0'
-  s.license      = 'MIT'
+  s.version      = '1.0.0'
+  s.license      = { :type => 'MIT', :file => 'LICENSE' }
   s.authors      = { 'Xummer' => 'xummer26@gmail.com' }
   s.homepage     = 'https://github.com/Xummer/ServerChan'
   s.platform     = :ios, '7.0'
@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
   s.source       = { :git => 'https://github.com/Xummer/ServerChan.git', :tag => s.version.to_s }
   
   s.requires_arc = true
-  s.source_files = 'ServerChan/*.{h,m}'
-  s.public_header_files = 'ServerChan/*.{h}'
+  s.source_files = 'ServerChan/ServerChan/*.{h,m}'
+  s.public_header_files = 'ServerChan/ServerChan/*.{h}'
   s.frameworks = 'UIKit', 'CoreFoundation'
 end
